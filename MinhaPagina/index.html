@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexsandro Macedo de Jesus - Trainee de RPA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="antialiased">
+
+    <nav class="bg-main-nav shadow-md sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold nav-title-color transition-colors duration-300"
+                data-aos="fade-right">Alexsandro M. Jesus</a>
+
+            <div class="hidden md:flex items-center space-x-1 md:space-x-3 text-sm md:text-base" data-aos="fade-left">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#experience" class="nav-link">Experiência</a>
+                <a href="#education" class="nav-link">Formação</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#courses" class="nav-link">Cursos</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+                <button id="theme-toggle" class="theme-toggle-button" title="Alternar tema">
+                    <i class="fas fa-sun"></i> </button>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="theme-toggle-mobile" class="theme-toggle-button mr-2" title="Alternar tema">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button id="mobile-menu-button" class="text-nav-item focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden hidden bg-mobile-menu-bg transition-all duration-300 ease-out">
+            <a href="#about" class="block nav-link-mobile">Sobre</a>
+            <a href="#experience" class="block nav-link-mobile">Experiência</a>
+            <a href="#education" class="block nav-link-mobile">Formação</a>
+            <a href="#skills" class="block nav-link-mobile">Habilidades</a>
+            <a href="#courses" class="block nav-link-mobile">Cursos</a>
+            <a href="#contact" class="block nav-link-mobile">Contato</a>
+        </div>
+    </nav>
+
+    <header class="hero-gradient text-white py-20 md:py-28">
+        <div class="container mx-auto px-6 text-center" data-aos="zoom-in">
+            <img src="./images/eu.jpg" alt="[Foto de Alexsandro Macedo]"
+                class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-xl object-cover">
+            <h1 class="text-4xl md:text-5xl font-bold mb-3">Alexsandro Macedo de Jesus</h1>
+            <p class="text-xl md:text-2xl font-light mb-4">Trainee de RPA | Power Automate</p>
+            <p class="text-lg md:text-xl font-light mb-8 max-w-xl mx-auto">Entusiasta de Inteligência Artificial e
+                Tecnologia, 23 anos.</p>
+            <a href="#contact" class="primary-button">
+                Conecte-se Comigo
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 md:py-24 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-center section-text-color" data-aos="fade-up"
+                data-aos-delay="100">
+                <p class="mb-4">
+                    Olá! Sou Alexsandro, um jovem de 23 anos gosto de tecnologia e atualmente estou atuando como Trainee
+                    de RPA, com foco na ferramenta Power Automate. Estou em uma jornada de transição de carreira, vindo
+                    da área de RH, e busco ativamente oportunidades para aplicar e expandir meus conhecimentos em
+                    automação e, especialmente, Inteligência Artificial.
+                </p>
+                <p class="mb-4">
+                    Sou um entusiasta de novas tecnologias, sempre curioso e proativo na busca por aprendizado. Minha
+                    experiência anterior me proporcionou uma base sólida em processos e organização, habilidades que
+                    agora direciono para o universo da TI.
+                </p>
+                <p class="mb-6">
+                    Fora do ambiente profissional, sou um apreciador de arte e um leitor ávido. Também pratico esportes
+                    como futebol, muay thai e musculação, atividades que me ajudam a manter o equilíbrio e a disciplina.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-16 md:py-24 section-bg-alt">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Experiência Profissional</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="experience-item mb-8" data-aos="fade-up">
+                    <h3 class="item-title">Trainee de RPA (Automação de Processos Robóticos)</h3>
+                    <p class="font-medium item-subtitle">Vegus Construtora e Incorporadora LTDA (ou sua empresa atual)
+                    </p>
+                    <p class="date-text">Início recente – Atual</p>
+                    <ul class="list-disc list-inside space-y-1 item-text">
+                        <li>Desenvolvimento e manutenção de automações utilizando Power Automate.</li>
+                        <li>Análise de processos para identificar oportunidades de automação.</li>
+                        <li>Colaboração com equipes para implementar soluções de RPA.</li>
+                        <li>Estudo e aplicação de conceitos de Inteligência Artificial para otimizar automações.</li>
+                    </ul>
+                </div>
+                <div class="experience-item mb-8" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="item-title">Assistente Administrativo de RH</h3>
+                    <p class="font-medium item-subtitle">Vegus Construtora e Incorporadora LTDA</p>
+                    <p class="date-text">Julho/2023 – (Data de término)</p>
+                    <ul class="list-disc list-inside space-y-1 item-text">
+                        <li>Análise e otimização de processos de RH.</li>
+                        <li>Implementação de soluções para agilizar fluxos de trabalho.</li>
+                    </ul>
+                </div>
+                <div class="experience-item mb-8" data-aos="fade-up" data-aos-delay="150">
+                    <h3 class="item-title">Auxiliar Administrativo de RH - Jovem Aprendiz</h3>
+                    <p class="font-medium item-subtitle">JJO Construtora e Incorporadora LTDA</p>
+                    <p class="date-text">Julho/2022 – Julho/2023</p>
+                    <ul class="list-disc list-inside space-y-1 item-text">
+                        <li>Controle de VR, VT e ASO, garantindo conformidade.</li>
+                        <li>Organização de medições internas e utilização do Pacote Office.</li>
+                    </ul>
+                </div>
+                <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="item-title">Estagiário Administrativo</h3>
+                    <p class="font-medium item-subtitle">Tribunal de Justiça (TJ) - São Paulo</p>
+                    <p class="date-text">Abril/2018 – Abril/2019</p>
+                    <ul class="list-disc list-inside space-y-1 item-text">
+                        <li>Organização e digitalização de arquivos.</li>
+                        <li>Atendimento ao público e suporte em processos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-16 md:py-24 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Formação Acadêmica</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="education-item mb-8" data-aos="fade-up">
+                    <h3 class="item-title">Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="font-medium item-subtitle">FIAP - Centro Universitário</p>
+                    <p class="date-text">Conclusão prevista: Dezembro/2025</p>
+                </div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="item-title">Técnico em Administração</h3>
+                    <p class="font-medium item-subtitle">Etec Getúlio Vargas (Extensão Roldão Lopes de Barros)</p>
+                    <p class="date-text">Concluído</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 md:py-24 section-bg-alt">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Habilidades Chave</h2>
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-center mb-10 text-lg section-text-color">Constantemente aprendendo e evoluindo, estas são
+                    algumas das minhas principais competências:</p>
+                <div class="flex flex-wrap justify-center gap-3 md:gap-4 mb-10">
+                    <span class="skill-tag">Power Automate</span>
+                    <span class="skill-tag">RPA</span>
+                    <span class="skill-tag">Inteligência Artificial (Foco de Estudo)</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+                <h3 class="text-2xl font-semibold text-center mb-6 section-subtitle-color" data-aos="fade-up">Soft
+                    Skills</h3>
+                <div class="flex flex-wrap justify-center gap-3 md:gap-4" data-aos="fade-up" data-aos-delay="50">
+                    <span class="soft-skill-tag">Proatividade</span>
+                    <span class="soft-skill-tag">Curiosidade</span>
+                    <span class="soft-skill-tag">Adaptabilidade</span>
+                    <span class="soft-skill-tag">Aprendizado Contínuo</span>
+                    <span class="soft-skill-tag">Comunicação Efetiva</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-16 md:py-24 section-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Cursos Complementares</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="course-item mb-6" data-aos="fade-up">
+                    <h3 class="item-title">SQL com Oracle Database</h3>
+                    <p class="font-medium item-subtitle">Alura (2024)</p>
+                </div>
+                <div class="course-item mb-6" data-aos="fade-up" data-aos-delay="50">
+                    <h3 class="item-title">System Analysis and Web Prototyping</h3>
+                    <p class="font-medium item-subtitle">FIAP (2024)</p>
+                </div>
+                <div class="course-item mb-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="item-title">JavaScript e HTML: Lógica de Programação</h3>
+                    <p class="font-medium item-subtitle">Alura (2024)</p>
+                </div>
+                <div class="course-item mb-6" data-aos="fade-up" data-aos-delay="150">
+                    <h3 class="item-title">Algoritmos e Lógica de Programação</h3>
+                    <p class="font-medium item-subtitle">Udemy (2024)</p>
+                </div>
+                <div class="course-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="item-title">Power BI</h3>
+                    <p class="font-medium item-subtitle">Impacta Tecnologia (2023)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-16 md:py-24 contact-section transition-colors duration-300">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <h2 class="contact-title text-3xl font-bold text-center mb-12">Conecte-se Comigo</h2>
+            <div class="max-w-md mx-auto text-center">
+                <p class="text-lg mb-8 contact-text">
+                    Estou sempre aberto a novas oportunidades, colaborações e conversas sobre tecnologia. Vamos nos
+                    conectar!
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="https://www.linkedin.com/in/alexsandro-macedo-jesus/" target="_blank"
+                        rel="noopener noreferrer" class="contact-link-icon"><i class="fab fa-linkedin"></i><span
+                            class="sr-only">LinkedIn</span></a>
+                    <a href="https://github.com/AlexxsandroM" target="_blank" rel="noopener noreferrer"
+                        class="contact-link-icon"><i class="fab fa-github"></i><span class="sr-only">GitHub</span></a>
+                    <a href="mailto:alexsandromacedo872@gmail.com" class="contact-link-icon"><i
+                            class="fas fa-envelope"></i><span class="sr-only">Email</span></a>
+                </div>
+                <p class="text-sm contact-text-secondary"><i class="fas fa-map-marker-alt mr-2"></i>Cambuci, São Paulo,
+                    Brasil</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-bg py-8 text-center transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <p class="footer-text">&copy; <span id="currentYear"></span> Alexsandro Macedo de Jesus. Todos os direitos
+                reservados.</p>
+            <p class="text-sm mt-1 footer-text">Desenvolvido com <i class="fas fa-code"></i> e Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+/* style.css */
+:root {
+    /* Light Mode Colors (from your palette) */
+    --bg-primary-light: #F2F2F2;
+    /* Main page background */
+    --bg-secondary-light: #FFFFFF;
+    /* Card, item backgrounds */
+    --bg-nav-light: #FFFFFF;
+    /* Nav background */
+    --text-primary-light: #374151;
+    /* Tailwind gray-700 - Main text */
+    --text-secondary-light: #4B5563;
+    /* Tailwind gray-600 - Paragraphs, item text */
+    --text-tertiary-light: #6B7280;
+    /* Tailwind gray-500 - Date text */
+    --accent-blue-primary: #134BF2;
+    /* Main accent, nav title, section titles */
+    --accent-blue-secondary: #0C87F2;
+    /* Item titles, hover effects */
+    --accent-blue-tertiary: #1BA0F2;
+    /* Project buttons, some hovers */
+    --border-light: #E0E7FF;
+    /* Light blue for some borders */
+    --tag-bg-light: #E0E7FF;
+    --tag-text-light: var(--accent-blue-primary);
+    --soft-skill-tag-bg-light: #B8BBBF30;
+    /* Light gray with opacity */
+    --soft-skill-tag-text-light: var(--text-primary-light);
+    --soft-skill-tag-border-light: #B8BBBF;
+    --contact-bg-light: var(--accent-blue-primary);
+    --contact-text-primary-light: #F2F2F2;
+    --contact-text-secondary-light: #B8BBBF;
+    --contact-icon-light: #B8BBBF;
+    --contact-icon-hover-light: #FFFFFF;
+    --footer-bg-light: var(--accent-blue-secondary);
+    --footer-text-light: var(--border-light);
+
+
+    /* Dark Mode Colors (derived and adapted) */
+    --bg-primary-dark: #0F172A;
+    /* Tailwind slate-900 - Main page background */
+    --bg-secondary-dark: #1E293B;
+    /* Tailwind slate-800 - Card, item backgrounds */
+    --bg-nav-dark: #162137;
+    /* Slightly lighter than bg-secondary-dark for nav */
+    --text-primary-dark: #E2E8F0;
+    /* Tailwind slate-200 - Main text, titles that were blue */
+    --text-secondary-dark: #94A3B8;
+    /* Tailwind slate-400 - Paragraphs, item text */
+    --text-tertiary-dark: #64748B;
+    /* Tailwind slate-500 - Date text */
+    /* Accent blues in dark mode are mostly for icons or specific highlights, not primary text */
+    --accent-blue-primary-dark-highlight: var(--accent-blue-primary);
+    --accent-blue-secondary-dark-highlight: var(--accent-blue-secondary);
+    --accent-blue-tertiary-dark-highlight: var(--accent-blue-tertiary);
+    --border-dark: var(--accent-blue-secondary-dark-highlight);
+    --tag-bg-dark: #1E3A8A;
+    --tag-text-dark: #BFDBFE;
+    --soft-skill-tag-bg-dark: #334155;
+    --soft-skill-tag-text-dark: var(--text-primary-dark);
+    --soft-skill-tag-border-dark: #475569;
+    --contact-bg-dark: var(--bg-secondary-dark);
+    --contact-text-primary-dark: var(--text-primary-dark);
+    --contact-text-secondary-dark: var(--text-secondary-dark);
+    --contact-icon-dark: var(--accent-blue-tertiary-dark-highlight);
+    --contact-icon-hover-dark: var(--accent-blue-primary-dark-highlight);
+    --footer-bg-dark: var(--bg-primary-dark);
+    --footer-text-dark: var(--text-secondary-dark);
+    --shadow-color-dark-mode: #060910;
+    /* Very dark for subtle shadows */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--bg-primary-light);
+    color: var(--text-primary-light);
+}
+
+/* Generic styles that apply to both modes and are then overridden by dark-mode */
+.section-bg {
+    background-color: var(--bg-secondary-light);
+}
+
+.section-bg-alt {
+    background-color: var(--bg-primary-light);
+}
+
+.section-text-color {
+    color: var(--text-secondary-light);
+}
+
+.nav-title-color {
+    color: var(--accent-blue-primary);
+}
+
+.nav-link {
+    color: var(--text-primary-light);
+    padding: 0.5rem 0.75rem;
+    /* py-2 px-3 */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-blue-primary);
+    background-color: rgba(19, 75, 242, 0.1);
+    /* Light blue hover bg */
+}
+
+.nav-link-mobile {
+    /* Specific for mobile menu links */
+    padding: 0.75rem 1.5rem;
+    /* py-3 px-6 */
+    color: var(--text-primary-light);
+    border-bottom: 1px solid var(--border-light);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: block;
+    /* Ensure links take full width */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.nav-link-mobile:hover {
+    color: var(--accent-blue-primary);
+    background-color: rgba(19, 75, 242, 0.05);
+}
+
+.nav-link-mobile:last-child {
+    border-bottom: none;
+    /* Remove border from the last mobile menu item */
+}
+
+.bg-main-nav {
+    background-color: var(--bg-nav-light);
+}
+
+.bg-mobile-menu-bg {
+    background-color: var(--bg-nav-light);
+}
+
+/* Mobile menu background */
+
+
+.section-title {
+    color: var(--accent-blue-primary);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    /* text-3xl */
+    font-weight: 700;
+    /* font-bold */
+    text-align: center;
+    margin-bottom: 3rem;
+    /* mb-12 */
+}
+
+.section-subtitle-color {
+    color: var(--accent-blue-secondary);
+}
+
+.card,
+.experience-item,
+.education-item,
+.course-item {
+    background-color: var(--bg-secondary-light);
+    border-radius: 0.75rem;
+    /* rounded-lg or rounded-xl */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    /* shadow-md or shadow-lg */
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    /* Slightly less aggressive hover */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item,
+.education-item,
+.course-item {
+    padding: 1.5rem;
+    /* p-6 */
+    margin-bottom: 1.5rem;
+    /* mb-6 */
+}
+
+.item-title {
+    /* For h3 in experience, education, course items */
+    color: var(--accent-blue-secondary);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    /* text-xl */
+    font-weight: 600;
+    /* font-semibold */
+    margin-bottom: 0.25rem;
+    /* mb-1 */
+}
+
+.item-subtitle {
+    color: var(--accent-blue-secondary);
+}
+
+/* For company/institution name */
+.item-text {
+    color: var(--text-secondary-light);
+}
+
+.item-title-card {
+    /* For h3 in project cards */
+    color: var(--accent-blue-secondary);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    /* text-xl */
+    font-weight: 600;
+    /* font-semibold */
+    margin-bottom: 0.5rem;
+    /* mb-2 */
+}
+
+.item-text-card {
+    color: var(--text-secondary-light);
+}
+
+.date-text {
+    color: var(--text-tertiary-light);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    /* text-sm */
+    margin-bottom: 0.5rem;
+    /* mb-2 */
+}
+
+.hero-gradient {
+    background-image: linear-gradient(to right, var(--accent-blue-primary), var(--accent-blue-tertiary));
+}
+
+.primary-button {
+    background-color: var(--accent-blue-primary);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    /* py-3 px-8 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    /* text-lg */
+    display: inline-block;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-blue-secondary);
+    transform: translateY(-2px);
+}
+
+.project-button {
+    background-color: var(--accent-blue-tertiary);
+    color: white;
+    padding: 0.5rem 1rem;
+    /* px-4 py-2 */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    transition: background-color 0.3s ease;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    display: inline-block;
+}
+
+.project-button:hover {
+    background-color: var(--accent-blue-secondary);
+}
+
+.contact-section {
+    background-color: var(--contact-bg-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-title {
+    color: var(--contact-text-primary-light);
+}
+
+.contact-text {
+    color: var(--contact-text-primary-light);
+}
+
+.contact-text-secondary {
+    color: var(--contact-text-secondary-light);
+}
+
+.contact-link-icon {
+    color: var(--contact-icon-light);
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-size: 2.25rem;
+    /* text-4xl */
+}
+
+.contact-link-icon:hover {
+    color: var(--contact-icon-hover-light);
+    transform: scale(1.1);
+}
+
+.footer-bg {
+    background-color: var(--footer-bg-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-text {
+    color: var(--footer-text-light);
+}
+
+.skill-tag {
+    background-color: var(--tag-bg-light);
+    color: var(--tag-text-light);
+    border: 1px solid var(--accent-blue-tertiary);
+    padding: 0.5rem 1rem;
+    /* px-4 py-2 */
+    border-radius: 9999px;
+    /* rounded-full */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    /* shadow-sm */
+}
+
+.soft-skill-tag {
+    background-color: var(--soft-skill-tag-bg-light);
+    color: var(--soft-skill-tag-text-light);
+    border: 1px solid var(--soft-skill-tag-border-light);
+    padding: 0.5rem 1rem;
+    /* px-4 py-2 */
+    border-radius: 9999px;
+    /* rounded-full */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    /* shadow-sm */
+}
+
+/* Theme Toggle Button */
+.theme-toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    /* Slightly smaller */
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    /* rounded-md */
+    color: var(--accent-blue-primary);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-toggle-button:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile menu button icon color */
+#mobile-menu-button {
+    /* Targets the button specifically */
+    color: var(--accent-blue-primary);
+    transition: color 0.3s ease;
+}
+
+#mobile-menu-button i {
+    /* Targets the icon inside the button */
+    color: var(--accent-blue-primary);
+    /* Ensures icon color matches button */
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--bg-primary-dark);
+    color: var(--text-primary-dark);
+}
+
+body.dark-mode .section-bg {
+    background-color: var(--bg-secondary-dark);
+}
+
+body.dark-mode .section-bg-alt {
+    background-color: var(--bg-primary-dark);
+}
+
+body.dark-mode .section-text-color {
+    color: var(--text-secondary-dark);
+}
+
+body.dark-mode .nav-title-color {
+    color: var(--text-primary-dark);
+}
+
+/* Blue to White */
+body.dark-mode .nav-link {
+    color: var(--text-primary-dark);
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--accent-blue-tertiary-dark-highlight);
+    background-color: rgba(27, 160, 242, 0.15);
+    /* Light blue hover bg for dark mode */
+}
+
+body.dark-mode .nav-link-mobile {
+    color: var(--text-primary-dark);
+    border-bottom-color: var(--bg-primary-dark);
+    /* Darker border for mobile menu items */
+}
+
+body.dark-mode .nav-link-mobile:hover {
+    color: var(--accent-blue-tertiary-dark-highlight);
+    background-color: rgba(27, 160, 242, 0.1);
+}
+
+body.dark-mode .bg-main-nav {
+    background-color: var(--bg-nav-dark);
+}
+
+body.dark-mode .bg-mobile-menu-bg {
+    background-color: var(--bg-nav-dark);
+}
+
+
+body.dark-mode .section-title {
+    color: var(--text-primary-dark);
+}
+
+/* Blue to White */
+body.dark-mode .section-subtitle-color {
+    color: var(--accent-blue-secondary-dark-highlight);
+}
+
+
+body.dark-mode .card,
+body.dark-mode .experience-item,
+body.dark-mode .education-item,
+body.dark-mode .course-item {
+    background-color: var(--bg-secondary-dark);
+    border: 1px solid var(--bg-primary-dark);
+    /* Subtle border */
+    box-shadow: 0 4px 6px -1px var(--shadow-color-dark-mode), 0 2px 4px -2px var(--shadow-color-dark-mode);
+}
+
+body.dark-mode .card:hover {
+    box-shadow: 0 10px 15px -3px var(--shadow-color-dark-mode), 0 4px 6px -2px var(--shadow-color-dark-mode);
+}
+
+body.dark-mode .item-title {
+    color: var(--text-primary-dark);
+}
+
+/* Blue to White */
+body.dark-mode .item-subtitle {
+    color: var(--accent-blue-tertiary-dark-highlight);
+}
+
+/* Keep a hint of blue for subtitles if desired, or also white */
+body.dark-mode .item-text {
+    color: var(--text-secondary-dark);
+}
+
+body.dark-mode .item-title-card {
+    color: var(--text-primary-dark);
+}
+
+/* Blue to White */
+body.dark-mode .item-text-card {
+    color: var(--text-secondary-dark);
+}
+
+body.dark-mode .date-text {
+    color: var(--text-tertiary-dark);
+}
+
+body.dark-mode .primary-button {
+    background-color: var(--accent-blue-secondary-dark-highlight);
+    color: var(--text-primary-dark);
+    /* Ensure text is light on blue button */
+}
+
+body.dark-mode .primary-button:hover {
+    background-color: var(--accent-blue-tertiary-dark-highlight);
+}
+
+body.dark-mode .project-button {
+    background-color: var(--accent-blue-tertiary-dark-highlight);
+    color: var(--text-primary-dark);
+}
+
+body.dark-mode .project-button:hover {
+    background-color: var(--accent-blue-secondary-dark-highlight);
+}
+
+body.dark-mode .contact-section {
+    background-color: var(--contact-bg-dark);
+}
+
+body.dark-mode .contact-title {
+    color: var(--text-primary-dark);
+}
+
+/* Blue to White */
+body.dark-mode .contact-text {
+    color: var(--contact-text-primary-dark);
+}
+
+body.dark-mode .contact-text-secondary {
+    color: var(--contact-text-secondary-dark);
+}
+
+body.dark-mode .contact-link-icon {
+    color: var(--contact-icon-dark);
+}
+
+body.dark-mode .contact-link-icon:hover {
+    color: var(--contact-icon-hover-dark);
+}
+
+body.dark-mode .footer-bg {
+    background-color: var(--footer-bg-dark);
+}
+
+body.dark-mode .footer-text {
+    color: var(--footer-text-dark);
+}
+
+body.dark-mode .skill-tag {
+    background-color: var(--tag-bg-dark);
+    color: var(--tag-text-dark);
+    border-color: var(--accent-blue-secondary-dark-highlight);
+}
+
+body.dark-mode .soft-skill-tag {
+    background-color: var(--soft-skill-tag-bg-dark);
+    color: var(--soft-skill-tag-text-dark);
+    border-color: var(--soft-skill-tag-border-dark);
+}
+
+body.dark-mode .theme-toggle-button {
+    color: var(--accent-blue-tertiary-dark-highlight);
+    /* Keep icon blue for visibility */
+}
+
+body.dark-mode #mobile-menu-button {
+    /* Targets the button specifically */
+    color: var(--accent-blue-tertiary-dark-highlight);
+}
+
+body.dark-mode #mobile-menu-button i {
+    /* Targets the icon inside the button */
+    color: var(--accent-blue-tertiary-dark-highlight);
+    /* Ensures icon color matches button */
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E5E7EB;
+}
+
+/* Tailwind gray-200 */
+::-webkit-scrollbar-thumb {
+    background: var(--accent-blue-primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue-secondary);
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #374155;
+}
+
+/* Darker track for dark mode (using a slate color) */
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: var(--accent-blue-secondary-dark-highlight);
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue-tertiary-dark-highlight);
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+/* Mobile menu specific styling */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    /* Tailwind's shadow-md equivalent for consistency */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    /* Smooth transition for max-height */
+    transition: max-height 0.3s ease-out;
+}
+
+#mobile-menu.open {
+    max-height: 500px;
+    /* Adjust as needed, should be enough for links */
+    /* Add padding when open if desired, or style links directly */
+    /* padding-top: 0.5rem; */
+    /* padding-bottom: 0.5rem; */
+}
+
+body.dark-mode #mobile-menu {
+    box-shadow: 0 4px 6px -1px var(--shadow-color-dark-mode), 0 2px 4px -2px var(--shadow-color-dark-mode);
+}
