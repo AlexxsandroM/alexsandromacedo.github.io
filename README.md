@@ -41,7 +41,7 @@ O site foi desenvolvido utilizando:
 
 Você pode incluir imagens demonstrando o layout do site. Exemplo:
 
-![Imagem do site](loyalt.png)
+![Imagem do site](./images/loyalt.png)
 
 ---
 
