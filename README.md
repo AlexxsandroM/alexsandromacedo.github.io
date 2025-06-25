@@ -7,10 +7,7 @@ Este site foi desenvolvido com o objetivo de apresentar meus projetos, experiên
 
 ## 🌐 Link do Site
 
-[Acesse o site aqui](https://alexxsandrom.github.io/alexsandromacedo.github.io/#)
-
-> Substitua o link acima pelo endereço final:  
-> Exemplo: `https://alexxsandrom.github.io/alexsandromacedo.github.io/#`
+>[Acesse o site aqui](https://alexxsandrom.github.io/alexsandromacedo.github.io/#)
 
 ---
 
@@ -37,9 +34,8 @@ O site foi desenvolvido utilizando:
 
 ---
 
-## 📸 Capturas de Tela (opcional)
+## 📸 Capturas de Tela 
 
-Você pode incluir imagens demonstrando o layout do site. Exemplo:
 
 ![Imagem do site](./images/loyalt.png)
 
@@ -49,9 +45,9 @@ Você pode incluir imagens demonstrando o layout do site. Exemplo:
 
 Sinta-se à vontade para entrar em contato:
 
-- E-mail: alexsandromacedo872@exemplo.com  
-- LinkedIn: [Seu Perfil](https:www.linkedin.com/in/alexsandro-macedo-jesus)
-- GitHub: [@alexxsandrom](https://github.com/alexxsandrom)
+- [E-mail](alexsandromacedo872@exemplo.com)  
+- [LinkedIn](https:www.linkedin.com/in/alexsandro-macedo-jesus)
+- [GitHub](https://github.com/alexxsandrom)
 
 ---
 
